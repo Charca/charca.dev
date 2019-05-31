@@ -1,11 +1,11 @@
 import React from 'react'
 import { graphql, Link } from 'gatsby'
-import Layout from '../../components/layout'
+import Layout from '../../components/layout/layout'
 
 export default ({ data }) => {
   const { edges: posts } = data.allMdx
   return (
-    <Layout>
+    <Layout active="essays">
       {posts.map(({ node }) => {
         const { id, excerpt, fields, frontmatter } = node
         const { title, author } = frontmatter

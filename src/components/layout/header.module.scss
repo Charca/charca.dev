@@ -1,0 +1,61 @@
+@import "variables.scss";
+
+.header {
+  font-family: Lato, sans-serif;
+  margin: 40px 0;
+}
+
+.container {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: row;
+}
+
+.logo {
+  color: $primary-color;
+  font-size: 32px;
+  text-decoration: none;
+}
+
+.navigation {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    margin-left: 30px;
+  }
+
+  a {
+    color: $text-color;
+    text-decoration: none;
+    padding-bottom: 5px;
+    position: relative;
+
+    &:before, &:after {
+      content: '';
+      position: absolute;
+      transition: transform .3s ease;
+    }
+
+    &:before {
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 2px;
+      background: $primary-color;
+      transform: scaleX(0);
+    }
+
+    &:hover:before {
+      transform: scaleX(1);
+    }
+
+    &[class*=is-active] {
+      &:before { transform: scaleX(1) }
+    }
+  }
+}

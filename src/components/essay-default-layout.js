@@ -1,11 +1,11 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import Layout from './layout'
+import Layout from './layout/layout'
 
 export default ({ children, pageContext }) => {
   const { title, author, date } = pageContext.frontmatter
   return (
-    <Layout>
+    <Layout active="essays">
       <Helmet>
         <title>{title}</title>
       </Helmet>
