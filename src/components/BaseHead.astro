@@ -1,5 +1,6 @@
 ---
-import '../styles/blog.css';
+// import '../styles/blog.css';
+import '../styles/styles.css';
 
 export interface Props {
 	title: string;
@@ -24,15 +25,26 @@ const { title, description, permalink } = Astro.props;
 <meta property="og:url" content={permalink} />
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
-<meta property="og:image" content="https://astro.build/social.png?v=1" />
+<!-- <meta property="og:image" content="https://astro.build/social.png?v=1" /> -->
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image" />
 <meta property="twitter:url" content={permalink} />
 <meta property="twitter:title" content={title} />
 <meta property="twitter:description" content={description} />
-<meta property="twitter:image" content="https://astro.build/social.png?v=1" />
+<!-- <meta property="twitter:image" content="https://astro.build/social.png?v=1" /> -->
 
 <!-- Fonts -->
-<link rel="preconnect" href="https://fonts.gstatic.com" />
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=IBM+Plex+Sans:wght@400;700&display=swap" />
+<!-- <link rel="preconnect" href="https://fonts.gstatic.com" /> -->
+<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=IBM+Plex+Sans:wght@400;700&display=swap" /> -->
+
+<!-- <link rel="preconnect" href="https://p.typekit.net" />
+<link rel="stylesheet" href="https://use.typekit.net/byf8zmw.css" /> -->
+
+<!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+<!-- <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet"> -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@700&family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">

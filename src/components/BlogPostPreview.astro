@@ -9,10 +9,8 @@ const { post } = Astro.props;
 <article class="post-preview">
 	<header>
 		<p class="publish-date">{post.frontmatter.publishDate}</p>
-		<a href={post.url}><h1 class="title">{post.frontmatter.title}</h1></a>
+		<a href={post.url}><h2 class="title">{post.frontmatter.title}</h2></a>
 	</header>
-	<p>{post.frontmatter.description}</p>
-	<a href={post.url}>Read more</a>
 </article>
 
 <style>
@@ -33,6 +31,10 @@ const { post } = Astro.props;
 		justify-content: center;
 		padding-bottom: 2rem;
 		text-align: left;
+	}
+
+	h2 {
+		font-family: var(--font-family-serif);
 	}
 
 	.title,
