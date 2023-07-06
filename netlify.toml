@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "https://charca.dev"
+  to = "https://maxiferreira.com"
+  status = 301
+  force = true
