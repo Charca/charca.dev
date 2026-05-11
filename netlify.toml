@@ -3,3 +3,9 @@
   to = "https://maxiferreira.com"
   status = 301
   force = true
+
+[[redirects]]
+  from = "https://charca.dev/fem-course"
+  to = "https://github.com/Charca/fem-frontend-architecture"
+  status = 301
+  force = true
