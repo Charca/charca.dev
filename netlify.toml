@@ -9,3 +9,9 @@
   to = "https://github.com/Charca/fem-frontend-architecture"
   status = 301
   force = true
+
+[[redirects]]
+  from = "https://charca.dev/fem-slides"
+  to = "https://fem-course-slides.pages.dev"
+  status = 301
+  force = true
